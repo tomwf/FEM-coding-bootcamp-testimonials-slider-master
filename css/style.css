@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+/********** Colors **********/
+/********** Primary **********/
+/********** Mixins **********/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+}
+
+body {
+  color: #202046;
+  max-width: 1440px;
+  margin: auto;
+}
+
+main {
+  background: url("../images/pattern-curve.svg") bottom left/auto 80px no-repeat, url("../images/pattern-bg.svg") top 10% center/320px no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6em;
+  text-align: center;
+  position: relative;
+  min-height: 664px;
+}
+main .slideshow {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .slideshow .image-container {
+  width: 255px;
+  height: 255px;
+  position: relative;
+  filter: drop-shadow(0 0.25em 0.5em rgba(32, 32, 70, 0.5));
+}
+main .slideshow .image-container img {
+  border-radius: 0.25em;
+  width: 100%;
+  height: 100%;
+}
+main .slideshow .image-container__buttons {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+main .slideshow .image-container__buttons button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+main .slideshow .image-container__buttons button:first-child {
+  background: white url("../images/icon-prev.svg") center/8px no-repeat;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+main .slideshow .image-container__buttons button:last-child {
+  background: white url("../images/icon-next.svg") center/8px no-repeat;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+main .feedback {
+  width: 100%;
+  height: 265px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6em;
+}
+main .feedback p {
+  font-size: 0.55rem;
+  font-weight: 300;
+  width: 100%;
+  max-width: 300px;
+}
+main .feedback p::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url("../images/pattern-quotes.svg") center/contain no-repeat;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .feedback .profile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main .feedback .profile span {
+  font-size: 0.45rem;
+  letter-spacing: 1px;
+}
+main .feedback .profile__name {
+  font-weight: 700;
+}
+main .feedback .profile__job {
+  font-weight: 500;
+  color: #babacf;
+}
+main .attribution {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (min-width: 1000px) {
+  main {
+    background: url("../images/pattern-curve.svg") bottom left/auto 150px no-repeat, url("../images/pattern-bg.svg") right 10% center/700px no-repeat;
+    position: relative;
+    height: 750px;
+  }
+  main .slideshow {
+    background: url("../images/pattern-bg.svg") center/700px no-repeat;
+    position: absolute;
+    right: 11.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 37.5vw;
+    max-width: 540px;
+    height: 37.5vw;
+    max-height: 540px;
+  }
+  main .slideshow .image-container {
+    width: 100%;
+    height: 100%;
+  }
+  main .slideshow .image-container__buttons {
+    left: 25%;
+  }
+  main .slideshow .image-container__buttons button {
+    width: 55px;
+    height: 55px;
+  }
+  main .slideshow .image-container__buttons button:first-child {
+    background: white url("../images/icon-prev.svg") center/11px no-repeat;
+  }
+  main .slideshow .image-container__buttons button:last-child {
+    background: white url("../images/icon-next.svg") center/11px no-repeat;
+  }
+  main .feedback {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 11.5%;
+    transform: translateY(-50%);
+    gap: 1em;
+    width: 46.875vw;
+    max-width: 675px;
+  }
+  main .feedback p {
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 100%;
+  }
+  main .feedback p::before {
+    left: 14%;
+    top: 0;
+    transform: translateY(-66%);
+    width: 120px;
+    height: 120px;
+  }
+  main .feedback .profile {
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  main .feedback .profile span {
+    font-size: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
