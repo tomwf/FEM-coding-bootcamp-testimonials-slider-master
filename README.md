@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [coding-bootcamp-testimonials-slider-master]()
+- Live Site URL: [coding-bootcamp-testimonials-slider-master](https://tomwf.github.io/FEM-coding-bootcamp-testimonials-slider-master/)
 
 ## My process
 
